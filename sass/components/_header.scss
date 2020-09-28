@@ -1,0 +1,104 @@
+.header {
+  height: 115rem;
+  position: relative;
+  @include respond(desktop){
+    height: 95rem;
+  }
+  @include respond(tab-land){
+    height: 100rem;
+  }
+  @include respond(phone) {
+    height: 125rem;
+  }
+  &_video {
+    width: 100%;
+    // @include respond(tab-land) {
+    //   width: 125%;
+    // }
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    &-content {
+      width: 100%;
+      background-size: cover;
+      background-position: center;
+      height: 100%;
+      object-fit: cover;
+    }
+    &::after {
+      content: "";
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1;
+      background: url("../assets/sakura-fiji.jpg");
+      opacity: 0.3;
+    }
+  }
+  &_overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.2);
+    // url('../assets/sakura-fiji.jpg')
+  }
+  &_menu {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    &-wrapper {
+      list-style: none;
+      /* color: #fff !important; */
+      /* width: auto; */
+      /* display: inline-block; */
+      /* padding: 0 10px; */
+      display: flex;
+      align-items: center;
+      margin: 0 auto;
+    }
+    &-item {
+      display: inline-block;
+      margin: 1rem;
+    }
+    &-link {
+      text-decoration: none;
+      color: #fff;
+      font-weight: 500;
+      font-size: 1.4rem;
+      text-transform: uppercase;
+    }
+    &-logo {
+      margin: 0 50px;
+      @include respond(tab-port) {
+        display: none;
+      }
+      &-responsive {
+        display: none;
+        @include respond(tab-port) {
+          display: block;
+          text-align: center;
+        }
+      }
+    }
+  }
+  &_wave-bg {
+    position: absolute;
+    bottom: 20rem;
+    width: 100%;
+    @include respond(tab-land) {
+      bottom: 25rem;
+    }
+
+    &-image {
+      width: 100%;
+      height: 19.2rem;
+    }
+  }
+}

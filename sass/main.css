@@ -1,0 +1,501 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+@media only screen and (max-width: 112.5em) {
+  html {
+    font-size: 56.25%;
+  }
+}
+
+@media only screen and (max-width: 75em) {
+  html {
+    font-size: 51%;
+  }
+}
+
+@media only screen and (max-width: 56.25em) {
+  html {
+    font-size: 47%;
+  }
+}
+
+@media only screen and (max-width: 37.5em) {
+  html {
+    font-size: 42%;
+  }
+}
+
+body {
+  box-sizing: border-box;
+  font-family: 'Rubik', sans-serif;
+  line-height: 1.6;
+  color: #777;
+  overflow-x: hidden;
+}
+
+.bowl {
+  width: 90rem;
+}
+
+@media only screen and (max-width: 75em) {
+  .bowl {
+    width: 80rem;
+  }
+}
+
+@media only screen and (max-width: 37.5em) {
+  .bowl {
+    width: 70rem;
+  }
+}
+
+.header {
+  height: 115rem;
+  position: relative;
+}
+
+@media only screen and (max-width: 112.5em) {
+  .header {
+    height: 95rem;
+  }
+}
+
+@media only screen and (max-width: 75em) {
+  .header {
+    height: 100rem;
+  }
+}
+
+@media only screen and (max-width: 37.5em) {
+  .header {
+    height: 125rem;
+  }
+}
+
+.header_video {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.header_video-content {
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  object-fit: cover;
+}
+
+.header_video::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background: url("../assets/sakura-fiji.jpg");
+  opacity: 0.3;
+}
+
+.header_overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.header_menu {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.header_menu-wrapper {
+  list-style: none;
+  /* color: #fff !important; */
+  /* width: auto; */
+  /* display: inline-block; */
+  /* padding: 0 10px; */
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.header_menu-item {
+  display: inline-block;
+  margin: 1rem;
+}
+
+.header_menu-link {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+}
+
+.header_menu-logo {
+  margin: 0 50px;
+}
+
+@media only screen and (max-width: 56.25em) {
+  .header_menu-logo {
+    display: none;
+  }
+}
+
+.header_menu-logo-responsive {
+  display: none;
+}
+
+@media only screen and (max-width: 56.25em) {
+  .header_menu-logo-responsive {
+    display: block;
+    text-align: center;
+  }
+}
+
+.header_wave-bg {
+  position: absolute;
+  bottom: 20rem;
+  width: 100%;
+}
+
+@media only screen and (max-width: 75em) {
+  .header_wave-bg {
+    bottom: 25rem;
+  }
+}
+
+.header_wave-bg-image {
+  width: 100%;
+  height: 19.2rem;
+}
+
+.summary {
+  background-color: #242424 !important;
+  transform: translateY(-21rem);
+  position: relative;
+}
+
+@media only screen and (max-width: 75em) {
+  .summary {
+    transform: translateY(-26rem);
+  }
+}
+
+.summary_plate {
+  position: absolute;
+  top: -31rem;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 60rem;
+}
+
+@media only screen and (max-width: 112.5em) {
+  .summary_plate {
+    width: 55rem;
+  }
+}
+
+@media only screen and (max-width: 75em) {
+  .summary_plate {
+    width: 50rem;
+  }
+}
+
+@media only screen and (max-width: 56.25em) {
+  .summary_plate {
+    width: 40rem;
+  }
+}
+
+.summary_content {
+  padding: 22rem 15rem 10rem;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .summary_content {
+    padding: 2rem 10rem 15rem;
+  }
+}
+
+@media only screen and (max-width: 75em) {
+  .summary_content {
+    padding: 1rem 1rem 15rem;
+  }
+}
+
+@media only screen and (max-width: 112.5em) {
+  .summary_content {
+    padding: 22rem 5rem 10rem;
+  }
+}
+
+.summary_title {
+  font-size: 4.8rem;
+  font-weight: 700;
+  font-style: normal;
+  color: #ffffff;
+  text-align: center;
+  margin: 10rem 0;
+}
+
+.summary_featured-title {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 500;
+  font-style: normal;
+  color: #fff;
+  margin: 2rem;
+}
+
+.summary_featured-body {
+  font-size: 1.4rem;
+  color: #777777;
+  text-align: center;
+}
+
+.summary_featured-image {
+  width: 30rem;
+}
+
+@media only screen and (max-width: 56.25em) {
+  .summary_featured-image {
+    width: 20rem;
+  }
+}
+
+@media only screen and (max-width: 37.5em) {
+  .summary_featured-image {
+    width: 40rem;
+  }
+}
+
+.philosophy {
+  transform: translateY(-205px);
+  background: #fff url("../assets/kanji-about.jpg");
+  padding: 20rem 0 0rem;
+  background-size: 85%;
+  background-repeat: no-repeat;
+  background-position: -10px center;
+}
+
+@media only screen and (max-width: 112.5em) {
+  .philosophy {
+    padding: 15rem 0 0rem;
+    background-size: 85%;
+    background-position: -120px center;
+  }
+}
+
+.philosophy_container {
+  width: 45rem;
+  margin: 0 auto;
+}
+
+.philosophy_title {
+  font-size: 4.2rem;
+  text-align: center;
+  color: #242424;
+  margin-bottom: 6rem;
+}
+
+.philosophy_content {
+  font-size: 1.8rem;
+}
+
+.philosophy_content p {
+  margin-bottom: 4rem;
+  line-height: 1.3;
+  text-align: justify;
+}
+
+.sushi-menu {
+  padding: 10rem 10rem 15rem;
+  background-image: url("../assets/test-sushi-back.jpg");
+}
+
+.sushi-menu_wrapper {
+  padding: 5rem;
+}
+
+.sushi-menu_subtitle {
+  text-align: center;
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 5rem;
+}
+
+.sushi-menu_card {
+  color: #fff;
+  background-color: #1b1b1b !important;
+  border-radius: 4px !important;
+  padding: 2rem 0;
+}
+
+.sushi-menu_card-image {
+  text-align: center;
+  width: 100%;
+}
+
+.sushi-menu_name {
+  font-size: 2.2rem;
+  text-align: center;
+}
+
+.sushi-menu_description {
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+.sushi-menu_description-quantity {
+  font-weight: 400;
+  color: #777;
+}
+
+.meaty {
+  padding: 10rem 15rem 15rem;
+  background-image: url("../assets/test-sushi-back2.jpg");
+}
+
+@media only screen and (max-width: 112.5em) {
+  .meaty {
+    padding: 10rem 10rem 2rem;
+  }
+}
+
+@media only screen and (max-width: 75em) {
+  .meaty {
+    padding: 10rem 2rem 2rem;
+  }
+}
+
+@media only screen and (max-width: 56.25em) {
+  .meaty {
+    padding: 10rem 1rem 2rem;
+  }
+}
+
+.rolls {
+  padding: 10rem 15rem 0;
+  background-color: #f5f5f5 !important;
+}
+
+@media only screen and (max-width: 112.5em) {
+  .rolls {
+    padding: 10rem 20rem 2rem;
+  }
+}
+
+@media only screen and (max-width: 75em) {
+  .rolls {
+    padding: 10rem 15rem 2rem;
+  }
+}
+
+@media only screen and (max-width: 56.25em) {
+  .rolls {
+    padding: 10rem 5rem 2rem;
+  }
+}
+
+@media only screen and (max-width: 37.5em) {
+  .rolls {
+    padding: 10rem 2rem 2rem;
+  }
+}
+
+.rolls_title {
+  font-size: 4.8rem;
+  font-weight: 700;
+  font-style: normal;
+  color: #242424;
+  text-align: center;
+  margin: 10rem;
+}
+
+.rolls_card {
+  background-color: #fff;
+  padding: 3rem 1rem;
+}
+
+.rolls_bg {
+  text-align: center;
+  padding: 8rem 0 0;
+}
+
+.footer {
+  background-image: url("../assets/board-dark.png");
+  background-size: contain;
+  background-repeat: repeat;
+  padding: 10rem 30rem 2rem;
+}
+
+@media only screen and (max-width: 112.5em) {
+  .footer {
+    padding: 10rem 20rem 2rem;
+  }
+}
+
+@media only screen and (max-width: 75em) {
+  .footer {
+    padding: 10rem 15rem 2rem;
+  }
+}
+
+@media only screen and (max-width: 56.25em) {
+  .footer {
+    padding: 10rem 5rem 2rem;
+  }
+}
+
+@media only screen and (max-width: 37.5em) {
+  .footer {
+    padding: 10rem 2rem 2rem;
+  }
+}
+
+.footer_icon-wrapper {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+.footer_image {
+  text-align: center;
+}
+
+.footer_ending {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10rem;
+}
+
+.footer_icon {
+  margin: 0 1rem;
+}
+
+.footer_terms {
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+/*# sourceMappingURL=main.css.map */
